@@ -10,6 +10,10 @@
   <meta property="og:image" content="https://consultorio-urbanistico.vercel.app/og-image.jpg" />
   <link rel="canonical" href="https://consultorio-urbanistico.vercel.app/" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module">
+    import { injectSpeedInsights } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@latest/dist/index.mjs';
+    injectSpeedInsights();
+  </script>
   <script>
     tailwind.config = {
       theme: {

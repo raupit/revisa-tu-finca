@@ -152,7 +152,7 @@
 
     <section class="w-full bg-soft">
       <div class="max-w-7xl mx-auto px-5 py-10">
-          <img src="/masia.jpg.jpg" alt="Entorno de Masía y Finca Rústica Catalana" class="w-full h-auto rounded-[2.5rem] shadow-card object-cover aspect-[21/9]" />
+          <img src="/masia.jpg" alt="Entorno de Masía y Finca Rústica Catalana" class="w-full h-auto rounded-[2.5rem] shadow-card object-cover aspect-[21/9]" />
       </div>
     </section>
 
@@ -164,7 +164,7 @@
           <p class="mt-5 text-lg text-muted">Antes de publicar o firmar arras, es imprescindible saber qué defectos documentales o físicos detectará la otra parte o el banco.</p>
         </div>
         <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-          <div class="rounded-3xl bg-white p-6 shadow-card card"><h3 class="font-black text-lg">Fincas rústicas</h3><p class="mt-2 text-muted">Verificación de usos permitidos, accesos, linderos y limitaciones de edificación.</p></div>
+          <div class="rounded-3xl bg-white p-6 shadow-card card"><h3 class="font-black text-lg">Fincas rústicas</h3><p class="mt-2 text-muted">Verificación de usos permitidos, accesos, linderos y limitations de edificación.</p></div>
           <div class="rounded-3xl bg-white p-6 shadow-card card"><h3 class="font-black text-lg">Masías</h3><p class="mt-2 text-muted">Examen de reformas antiguas, anexos y viabilidad de licencias de actividad.</p></div>
           <div class="rounded-3xl bg-white p-6 shadow-card card"><h3 class="font-black text-lg">Herencias</h3><p class="mt-2 text-muted">Subsanación de excesos de cabida, errores en el Registro y desactualización fiscal.</p></div>
           <div class="rounded-3xl bg-white p-6 shadow-card card"><h3 class="font-black text-lg">Terrenos</h3><p class="mt-2 text-muted">Análisis de planeamiento sectorial, cesiones obligatorias y viabilidad de promoción.</p></div>
@@ -219,10 +219,12 @@
         </div>
 
         <form action="https://formspree.io/f/xjgzqkag" method="POST" class="rounded-[2rem] bg-white p-6 md:p-8 shadow-soft card">
+          <input type="text" name="_gotcha" style="display:none" />
+
           <div class="grid md:grid-cols-2 gap-4">
-            <label><span class="text-sm font-bold">Nombre *</span><input required name="nombre" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3" placeholder="Tu nombre" /></label>
-            <label><span class="text-sm font-bold">Teléfono *</span><input required name="telefono" type="tel" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3" placeholder="Tu teléfono" /></label>
-            <label><span class="text-sm font-bold">Email</span><input name="email" type="email" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3" placeholder="tu@email.com" /></label>
+            <label><span class="text-sm font-bold">Nombre *</span><input required name="nombre" autocomplete="name" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3" placeholder="Tu nombre" /></label>
+            <label><span class="text-sm font-bold">Teléfono *</span><input required name="telefono" type="tel" autocomplete="tel" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3" placeholder="Tu teléfono" /></label>
+            <label><span class="text-sm font-bold">Email</span><input name="email" type="email" autocomplete="email" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3" placeholder="tu@email.com" /></label>
             <label><span class="text-sm font-bold">Municipio *</span><input required name="municipio" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3" placeholder="Ej. Manresa" /></label>
             <label><span class="text-sm font-bold">Tipo de propiedad *</span><select required name="tipo_propiedad" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3"><option value="">Selecciona</option><option>Finca rústica</option><option>Masía</option><option>Terreno / solar</option><option>Casa</option><option>Edificio</option><option>Local</option><option>Herencia</option><option>Otro</option></select></label>
             <label><span class="text-sm font-bold">Qué necesitas *</span><select required name="necesidad" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3"><option value="">Selecciona</option><option>Vender</option><option>Comprar</option><option>Heredar / repartir</option><option>Legalizar o revisar obras</option><option>Reformar</option><option>Resolver una duda urbanística</option></select></label>

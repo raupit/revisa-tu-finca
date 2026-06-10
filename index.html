@@ -10,6 +10,10 @@
   <meta property="og:image" content="https://revisa-tu-finca.vercel.app/og-image.jpg" />
   <link class="canonical" href="https://revisa-tu-finca.vercel.app/" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module">
+    import { injectSpeedInsights } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@latest/dist/index.mjs';
+    injectSpeedInsights();
+  </script>
   <script>
     tailwind.config = {
       theme: {

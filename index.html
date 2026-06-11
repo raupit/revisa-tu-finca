@@ -1,359 +1,484 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Diagnóstico & Consultorio Urbanístico | Ana Epitié · ASPEJURE 02659</title>
-  <meta name="description" content="Diagnóstico urbanístico y catastral inicial para propietarios de fincas rústicas, masías, terrenos o inmuebles con dudas registrales en Cataluña." />
-  <meta property="og:title" content="Diagnóstico & Consultorio Urbanístico | Ana Epitié" />
-  <meta property="og:description" content="Antes de firmar o vender, examina la situación legal y física de tu finca." />
-  <meta property="og:image" content="https://revisa-tu-finca.vercel.app/og-image.jpg" />
-  <link class="canonical" href="https://revisa-tu-finca.vercel.app/" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            ink: '#24323A',
-            gold: '#7FAE9B',
-            gold2: '#2F4D5A',
-            cream: '#F5F1E8',
-            soft: '#F8FAF7',
-            muted: '#65727A',
-            sage: '#6F8A7A',
-            sageLight: '#E8F0EA',
-            blue: '#2F4D5A',
-            mist: '#EDF3F1'
-          },
-          boxShadow: {
-            soft: '0 24px 70px rgba(0,0,0,.12)',
-            card: '0 12px 34px rgba(0,0,0,.07)'
-          }
-        }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Diagnóstico & Consultorio Urbanístico | Ana Epitié · ASPEJURE 02659</title>
+<meta name="description" content="¿Finca, masía o terreno en el Bages? Antes de vender, descubre qué oculta tu propiedad. Diagnóstico urbanístico y catastral inicial en Cataluña." />
+<meta property="og:title" content="Diagnóstico & Consultorio Urbanístico | Ana Epitié" />
+<meta property="og:description" content="Antes de firmar o vender, examina la situación legal y física de tu finca." />
+<meta property="og:image" content="https://revisa-tu-finca.vercel.app/og-image.jpg" />
+<link rel="canonical" href="https://revisa-tu-finca.vercel.app/" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#24323A',
+        gold: '#7FAE9B',
+        gold2: '#2F4D5A',
+        cream: '#F5F1E8',
+        soft: '#F8FAF7',
+        muted: '#65727A',
+        sage: '#6F8A7A',
+        sageLight: '#E8F0EA',
+        blue: '#2F4D5A',
+        mist: '#EDF3F1'
+      },
+      boxShadow: {
+        soft: '0 24px 70px rgba(0,0,0,.12)',
+        card: '0 12px 34px rgba(0,0,0,.07)'
       }
     }
-  </script>
-  <style>
-    html { scroll-behavior: smooth; }
-    body { background:#F8FAF7; color:#24323A; }
-    .gold { background: linear-gradient(135deg,#2F4D5A,#6F8A7A); }
-    .hero { background: radial-gradient(circle at top left, rgba(127,174,155,.32), transparent 34%), radial-gradient(circle at bottom right, rgba(111,138,122,.30), transparent 32%), linear-gradient(135deg,#2F4D5A,#6F8A7A); }
-    .soft-gradient { background: linear-gradient(135deg,#F8FAF7,#E8F0EA); }
-    .badge { letter-spacing:.13em; text-transform:uppercase; }
-    .whatsapp { position: fixed; right: 18px; bottom: 18px; z-index: 60; }
-    .card { border: 1px solid rgba(0,0,0,.06); }
-    .field:focus { outline: 3px solid rgba(127,174,155,.35); outline-offset: 2px; }
-  </style>
+  }
+}
+</script>
+<style>
+html { scroll-behavior: smooth; }
+body { background:#F8FAF7; color:#24323A; }
+.gold { background: linear-gradient(135deg,#2F4D5A,#6F8A7A); }
+.hero { background: radial-gradient(circle at top left, rgba(127,174,155,.32), transparent 34%), radial-gradient(circle at bottom right, rgba(111,138,122,.30), transparent 32%), linear-gradient(135deg,#2F4D5A,#6F8A7A); }
+.soft-gradient { background: linear-gradient(135deg,#F8FAF7,#E8F0EA); }
+.badge { letter-spacing:.13em; text-transform:uppercase; }
+.whatsapp { position: fixed; right: 18px; bottom: 18px; z-index: 60; }
+.card { border: 1px solid rgba(0,0,0,.06); }
+.field:focus { outline: 3px solid rgba(127,174,155,.35); outline-offset: 2px; }
+</style>
 </head>
 <body class="antialiased text-ink">
 
-  <a class="whatsapp gold rounded-full px-5 py-3 text-white font-bold shadow-soft" href="https://wa.me/34632831009?text=Hola%20Ana%2C%20he%20visto%20la%20web%20Consultorio%20Urban%C3%ADstico%20y%20quiero%20enviarte%20mi%20caso.">WhatsApp</a>
+<a class="whatsapp gold rounded-full px-5 py-3 text-white font-bold shadow-soft" href="https://wa.me/34632831009?text=Hola%20Ana%2C%20he%20visto%20la%20web%20Consultorio%20Urban%C3%ADstico%20y%20quiero%20enviarte%20mi%20caso.">WhatsApp</a>
 
-  <div id="cookie-banner" class="fixed inset-x-4 bottom-4 z-[80] hidden max-w-5xl mx-auto rounded-[1.5rem] bg-white shadow-soft border border-black/10 p-5">
-    <div class="grid lg:grid-cols-[1fr_auto] gap-4 items-center">
+<div id="cookie-banner" class="fixed inset-x-4 bottom-4 z-[80] hidden max-w-5xl mx-auto rounded-[1.5rem] bg-white shadow-soft border border-black/10 p-5">
+  <div class="grid lg:grid-cols-[1fr_auto] gap-4 items-center">
+    <div>
+      <p class="font-black text-ink">Uso de cookies</p>
+      <p class="mt-1 text-sm text-muted leading-relaxed">Utilizamos cookies técnicas necesarias para que la web funcione. Con tu permiso, también podremos usar cookies de análisis o publicidad para medir campañas y mejorar la captación de consultas.</p>
+      <a href="#legal" class="mt-2 inline-flex text-sm font-bold text-gold2 underline">Ver política de cookies</a>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-2">
+      <button id="reject-cookies" class="rounded-full border border-black/10 px-5 py-3 font-bold text-ink bg-white">Rechazar</button>
+      <button id="settings-cookies" class="rounded-full border border-black/10 px-5 py-3 font-bold text-ink bg-soft">Configurar</button>
+      <button id="accept-cookies" class="rounded-full gold px-5 py-3 font-bold text-white">Aceptar</button>
+    </div>
+  </div>
+</div>
+
+<div id="cookie-settings" class="fixed inset-0 z-[90] hidden bg-black/40 backdrop-blur-sm p-4">
+  <div class="max-w-xl mx-auto mt-20 rounded-[1.5rem] bg-white shadow-soft border border-black/10 p-6">
+    <div class="flex items-start justify-between gap-4">
       <div>
-        <p class="font-black text-ink">Uso de cookies</p>
-        <p class="mt-1 text-sm text-muted leading-relaxed">Utilizamos cookies técnicas necesarias para que la web funcione. Con tu permiso, también podremos usar cookies de análisis o publicidad para medir campañas y mejorar la captación de consultas.</p>
-        <a href="#legal" class="mt-2 inline-flex text-sm font-bold text-gold2 underline">Ver política de cookies</a>
+        <p class="text-2xl font-black text-ink">Configurar cookies</p>
+        <p class="mt-2 text-sm text-muted leading-relaxed">Puedes aceptar o rechazar cookies no necesarias. Las cookies técnicas permanecen activas porque son necesarias para la navegación.</p>
       </div>
-      <div class="flex flex-col sm:flex-row gap-2">
-        <button id="reject-cookies" class="rounded-full border border-black/10 px-5 py-3 font-bold text-ink bg-white">Rechazar</button>
-        <button id="settings-cookies" class="rounded-full border border-black/10 px-5 py-3 font-bold text-ink bg-soft">Configurar</button>
-        <button id="accept-cookies" class="rounded-full gold px-5 py-3 font-bold text-white">Aceptar</button>
+      <button id="close-cookie-settings" class="text-2xl leading-none text-muted" aria-label="Cerrar configuración">×</button>
+    </div>
+    <div class="mt-6 space-y-4">
+      <div class="rounded-2xl bg-soft p-4 border border-black/5">
+        <div class="flex items-center justify-between gap-4">
+          <div><p class="font-black">Cookies técnicas</p><p class="text-sm text-muted mt-1">Necesarias para el funcionamiento básico de la web.</p></div>
+          <span class="text-sm font-bold text-gold2">Siempre activas</span>
+        </div>
+      </div>
+      <label class="rounded-2xl bg-soft p-4 border border-black/5 flex items-center justify-between gap-4 cursor-pointer">
+        <div><p class="font-black">Cookies de análisis</p><p class="text-sm text-muted mt-1">Ayudan a saber qué secciones funcionan mejor.</p></div>
+        <input id="analytics-cookies" type="checkbox" class="h-5 w-5" />
+      </label>
+      <label class="rounded-2xl bg-soft p-4 border border-black/5 flex items-center justify-between gap-4 cursor-pointer">
+        <div><p class="font-black">Cookies de publicidad</p><p class="text-sm text-muted mt-1">Permiten medir anuncios y campañas, por ejemplo el píxel de TikTok.</p></div>
+        <input id="marketing-cookies" type="checkbox" class="h-5 w-5" />
+      </label>
+    </div>
+    <div class="mt-6 flex flex-col sm:flex-row gap-2 justify-end">
+      <button id="save-cookie-settings" class="rounded-full gold px-5 py-3 font-bold text-white">Guardar configuración</button>
+    </div>
+  </div>
+</div>
+
+<header class="sticky top-0 z-50 bg-soft/90 backdrop-blur border-b border-b-black/5">
+  <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+    <a href="#inicio" class="flex items-center gap-3">
+      <div class="h-10 w-10 rounded-full gold text-white flex items-center justify-center font-black">A</div>
+      <div>
+        <p class="font-black leading-none">Consultorio Urbanístico</p>
+        <p class="text-xs text-muted mt-1">Ana Epitié · ASPEJURE 02659</p>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 text-sm text-muted">
+      <a href="#casos" class="hover:text-ink">Casos</a>
+      <a href="#consulta" class="hover:text-ink">Consulta</a>
+      <a href="#formulario" class="hover:text-ink">Contacto</a>
+    </nav>
+    <a href="#formulario" class="hidden sm:inline-flex rounded-full bg-blue text-white px-5 py-2.5 font-bold text-sm">Enviar mi caso</a>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero text-white">
+  <div class="max-w-7xl mx-auto px-5 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="badge text-white/80 text-xs font-black mb-5">Ana Epitié · Perito judicial urbanístico ASPEJURE 02659</p>
+      <h1 class="text-4xl md:text-6xl font-black leading-[1.02] tracking-tight">Diagnóstico & Consultorio Urbanístico</h1>
+      <p class="mt-4 text-2xl md:text-3xl font-bold text-white/90">Antes de firmar o vender, examina la situación legal y física de tu finca.</p>
+      <p class="mt-6 text-lg md:text-xl text-white/78 leading-relaxed max-w-2xl">Especialista en masías, fincas rústicas, terrenos complejos y herencias con discrepancias registrales. Localizamos errores ocultos y blindamos el valor real de tu patrimonio.</p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-4">
+        <a href="#formulario" class="gold rounded-full px-7 py-4 text-white font-black text-center shadow-soft">Enviar mi caso</a>
+        <a href="https://wa.me/34632831009?text=Hola%20Ana%2C%20quiero%20consultarte%20una%20propiedad%20con%20dudas%20urban%C3%ADsticas." class="rounded-full px-7 py-4 text-white font-black text-center border border-white/25 bg-white/10">WhatsApp</a>
+      </div>
+      <div class="mt-7 grid sm:grid-cols-3 gap-3 max-w-2xl text-sm">
+        <div class="rounded-2xl bg-white/10 border border-white/15 p-4"><strong>Filtro Pericial</strong><br><span class="text-white/65">Gratis</span></div>
+        <div class="rounded-2xl bg-white/10 border border-white/15 p-4"><strong>Estudio Inicial</strong><br><span class="text-white/65">50 €</span></div>
+        <div class="rounded-2xl bg-white/10 border border-white/15 p-4"><strong>Criterio Técnico</strong><br><span class="text-white/65">ASPEJURE 02659</span></div>
+      </div>
+    </div>
+    <div class="relative flex justify-center">
+      <div class="rounded-[2rem] bg-white p-4 shadow-soft max-w-md w-full">
+        <div class="rounded-[1.5rem] bg-cream overflow-hidden flex items-center justify-center">
+          <img src="/pexels-tima-miroshnichenko-6614757.webp" alt="Planos de arquitectura pericial" class="w-full h-auto object-contain" />
+        </div>
       </div>
     </div>
   </div>
+</section>
 
-  <div id="cookie-settings" class="fixed inset-0 z-[90] hidden bg-black/40 backdrop-blur-sm p-4">
-    <div class="max-w-xl mx-auto mt-20 rounded-[1.5rem] bg-white shadow-soft border border-black/10 p-6">
-      <div class="flex items-start justify-between gap-4">
-        <div>
-          <p class="text-2xl font-black text-ink">Configurar cookies</p>
-          <p class="mt-2 text-sm text-muted leading-relaxed">Puedes aceptar o rechazar cookies no necesarias. Las cookies técnicas permanecen activas porque son necesarias para la navegación.</p>
-        </div>
-        <button id="close-cookie-settings" class="text-2xl leading-none text-muted" aria-label="Cerrar configuración">×</button>
+<section class="py-14 bg-white">
+  <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-3 gap-5">
+    <div class="rounded-3xl bg-soft p-6 shadow-card card"><p class="text-3xl font-black text-gold2">01</p><h2 class="mt-3 text-xl font-black">Detectar anomalías</h2><p class="mt-2 text-muted">Analizamos licencias, discrepancias catastrales, afectaciones del POUM y riesgos de fuera de ordenación.</p></div>
+    <div class="rounded-3xl bg-soft p-6 shadow-card card"><p class="text-3xl font-black text-gold2">02</p><h2 class="mt-3 text-xl font-black">Defender valor real</h2><p class="mt-2 text-muted">Desmontamos los errores técnicos de las valoraciones de la Administración que te hacen pagar de más.</p></div>
+    <div class="rounded-3xl bg-soft p-6 shadow-card card"><p class="text-3xl font-black text-gold2">03</p><h2 class="mt-3 text-xl font-black">Criterio de Mercado</h2><p class="mt-2 text-muted">Unimos el rigor pericial judicial con la visión comercial inmobiliaria de alto standing para inversores.</p></div>
+  </div>
+</section>
+
+<section class="w-full bg-soft">
+  <div class="max-w-7xl mx-auto px-5 py-10">
+    <img src="/masia.jpg.jpg" alt="Entorno de Masía y Finca Rústica Catalana" class="w-full h-auto rounded-[2.5rem] shadow-card object-cover aspect-[21/9]" />
+  </div>
+</section>
+
+<section class="py-20 bg-soft" id="casos">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="max-w-3xl">
+      <p class="badge text-gold2 text-xs font-black mb-4">Casos habituales</p>
+      <h2 class="text-3xl md:text-5xl font-black leading-tight">Una propiedad con dudas técnicas se negocia agresivamente a la baja.</h2>
+      <p class="mt-5 text-lg text-muted">Antes de publicar o firmar arras, es imprescindible saber qué defectos documentales o físicos detectará la otra parte o el banco.</p>
+    </div>
+    <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="rounded-3xl bg-white p-6 shadow-card card"><h3 class="font-black text-lg">Fincas rústicas</h3><p class="mt-2 text-muted">Verificación de usos permitidos, accesos, linderos y limitaciones de edificación.</p></div>
+      <div class="rounded-3xl bg-white p-6 shadow-card card"><h3 class="font-black text-lg">Masías</h3><p class="mt-2 text-muted">Examen de reformas antiguas, anexos y viabilidad de licencias de actividad.</p></div>
+      <div class="rounded-3xl bg-white p-6 shadow-card card"><h3 class="font-black text-lg">Herencias</h3><p class="mt-2 text-muted">Subsanación de excesos de cabida, errores en el Registro y desactualización fiscal.</p></div>
+      <div class="rounded-3xl bg-white p-6 shadow-card card"><h3 class="font-black text-lg">Terrenos</h3><p class="mt-2 text-muted">Análisis de planeamiento sectorial, cesiones obligatorias y viabilidad de promoción.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 bg-cream" id="consulta">
+  <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-10 items-center">
+    <div>
+      <p class="badge text-gold2 text-xs font-black mb-4">Cómo funciona</p>
+      <h2 class="text-3xl md:text-5xl font-black leading-tight">Evaluamos la viabilidad inicial del activo sin coste.</h2>
+      <p class="mt-5 text-lg text-muted">No se trata de dar respuestas genéricas automáticas. Primero realizamos un filtro técnico para confirmar si puedo ayudarte. Si el caso requiere un dictamen o análisis normativo profundo, pasamos al estudio inicial.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-5">
+      <div class="rounded-3xl bg-white p-7 shadow-card card"><p class="text-sm text-muted">Paso 1</p><h3 class="mt-2 text-2xl font-black">Filtro técnico</h3><p class="mt-2 text-4xl font-black text-gold2">Gratis</p><p class="mt-4 text-muted">Estudiamos la viabilidad preliminar de tu caso y definimos la documentación técnica a preparar.</p></div>
+      <div class="rounded-3xl bg-blue p-7 text-white shadow-soft"><p class="text-sm text-white/60">Paso 2</p><h3 class="mt-2 text-2xl font-black">Estudio inicial</h3><p class="mt-2 text-4xl font-black text-white">50 €</p><p class="mt-4 text-white/70">Revisión pericial concreta de la finca. Importe 100% deducible si encargas un dictamen posterior.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-5">
+    <p class="badge text-gold2 text-xs font-black mb-4 text-center">Casos reales</p>
+    <h2 class="text-2xl md:text-4xl font-black leading-tight text-center max-w-3xl mx-auto">Lo que un examen previo evita en una operación real.</h2>
+    <div class="mt-10 grid md:grid-cols-3 gap-5">
+      <div class="rounded-3xl bg-soft p-6 shadow-card card">
+        <p class="text-gold2 font-black text-sm badge">Masía · Bages</p>
+        <p class="mt-3 text-muted leading-relaxed">Construcción anexa sin licencia detectada antes de publicar. Se legalizó la situación y la venta se cerró sin rebaja del comprador.</p>
       </div>
-      <div class="mt-6 space-y-4">
-        <div class="rounded-2xl bg-soft p-4 border border-black/5">
-          <div class="flex items-center justify-between gap-4">
-            <div><p class="font-black">Cookies técnicas</p><p class="text-sm text-muted mt-1">Necesarias para el funcionamiento básico de la web.</p></div>
-            <span class="text-sm font-bold text-gold2">Siempre activas</span>
-          </div>
-        </div>
-        <label class="rounded-2xl bg-soft p-4 border border-black/5 flex items-center justify-between gap-4 cursor-pointer">
-          <div><p class="font-black">Cookies de análisis</p><p class="text-sm text-muted mt-1">Ayudan a saber qué secciones funcionan mejor.</p></div>
-          <input id="analytics-cookies" type="checkbox" class="h-5 w-5" />
-        </label>
-        <label class="rounded-2xl bg-soft p-4 border border-black/5 flex items-center justify-between gap-4 cursor-pointer">
-          <div><p class="font-black">Cookies de publicidad</p><p class="text-sm text-muted mt-1">Permiten medir anuncios y campañas, por ejemplo el píxel de TikTok.</p></div>
-          <input id="marketing-cookies" type="checkbox" class="h-5 w-5" />
-        </label>
+      <div class="rounded-3xl bg-soft p-6 shadow-card card">
+        <p class="text-gold2 font-black text-sm badge">Herencia · Manresa</p>
+        <p class="mt-3 text-muted leading-relaxed">Exceso de cabida de más de 400 m² sin inscribir. La subsanación registral previa evitó el bloqueo de la operación en notaría.</p>
       </div>
-      <div class="mt-6 flex flex-col sm:flex-row gap-2 justify-end">
-        <button id="save-cookie-settings" class="rounded-full gold px-5 py-3 font-bold text-white">Guardar configuración</button>
+      <div class="rounded-3xl bg-soft p-6 shadow-card card">
+        <p class="text-gold2 font-black text-sm badge">Terreno · Comarca</p>
+        <p class="mt-3 text-muted leading-relaxed">El planeamiento limitaba el uso previsto por el comprador. Conocerlo antes de las arras evitó una reclamación posterior al vendedor.</p>
+      </div>
+    </div>
+    <p class="mt-6 text-xs text-muted text-center">Casos reales descritos de forma genérica para preservar la confidencialidad de los clientes.</p>
+  </div>
+</section>
+
+<section class="py-20 bg-soft">
+  <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-[.9fr_1.1fr] gap-12 items-center">
+    <div class="rounded-[2rem] bg-white p-4 shadow-card card max-w-md mx-auto lg:mx-0 w-full">
+      <div class="rounded-[1.5rem] overflow-hidden flex items-center justify-center">
+        <img src="/ana-epitie-_1_.webp" alt="Ana Epitié · Consultora Urbanística" class="w-full h-auto object-cover aspect-[4/5]" />
+      </div>
+    </div>
+    <div>
+      <p class="badge text-gold2 text-xs font-black mb-4">Dirección técnica</p>
+      <h2 class="text-3xl md:text-5xl font-black leading-tight">Soy Ana Epitié.</h2>
+      <p class="mt-5 text-lg text-muted leading-relaxed">Asesora inmobiliaria y Perito Judicial Urbanístico adscrita a ASPEJURE (Nº 02659) en Cataluña. Mi valor diferencial consiste en fusionar la defensa pericial ante tribunales y administraciones con una visión comercial avanzada para blindar tus decisiones patrimoniales.</p>
+      <div class="mt-8 rounded-3xl bg-white p-6 card">
+        <p class="font-black text-xl">No publico por publicar. Diseño soluciones con amparo legal.</p>
+        <p class="mt-2 text-muted">Esa es la diferencia entre colocar una propiedad en internet y estructurar una operación inmobiliaria con absoluto criterio técnico.</p>
       </div>
     </div>
   </div>
+</section>
 
-  <header class="sticky top-0 z-50 bg-soft/90 backdrop-blur border-b border-b-black/5">
-    <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
-      <a href="#inicio" class="flex items-center gap-3">
-        <div class="h-10 w-10 rounded-full gold text-white flex items-center justify-center font-black">A</div>
-        <div>
-          <p class="font-black leading-none">Consultorio Urbanístico</p>
-          <p class="text-xs text-muted mt-1">Ana Epitié · ASPEJURE 02659</p>
-        </div>
-      </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm text-muted">
-        <a href="#casos" class="hover:text-ink">Casos</a>
-        <a href="#consulta" class="hover:text-ink">Consulta</a>
-        <a href="#formulario" class="hover:text-ink">Contacto</a>
-      </nav>
-      <a href="#formulario" class="hidden sm:inline-flex rounded-full bg-blue text-white px-5 py-2.5 font-bold text-sm">Enviar mi caso</a>
-    </div>
-  </header>
-
-  <main id="inicio">
-    <section class="hero text-white">
-      <div class="max-w-7xl mx-auto px-5 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <p class="badge text-white/80 text-xs font-black mb-5">Ana Epitié · Perito judicial urbanístico ASPEJURE 02659</p>
-          <h1 class="text-4xl md:text-6xl font-black leading-[1.02] tracking-tight">Diagnóstico & Consultorio Urbanístico</h1>
-          <p class="mt-4 text-2xl md:text-3xl font-bold text-white/90">Antes de firmar o vender, examina la situación legal y física de tu finca.</p>
-          <p class="mt-6 text-lg md:text-xl text-white/78 leading-relaxed max-w-2xl">Especialista en masías, fincas rústicas, terrenos complejos y herencias con discrepancias registrales. Localizamos errores ocultos y blindamos el valor real de tu patrimonio.</p>
-          <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="#formulario" class="gold rounded-full px-7 py-4 text-white font-black text-center shadow-soft">Enviar mi caso</a>
-            <a href="https://wa.me/34632831009?text=Hola%20Ana%2C%20quiero%20consultarte%20una%20propiedad%20con%20dudas%20urban%C3%ADsticas." class="rounded-full px-7 py-4 text-white font-black text-center border border-white/25 bg-white/10">WhatsApp</a>
-          </div>
-          <div class="mt-7 grid sm:grid-cols-3 gap-3 max-w-2xl text-sm">
-            <div class="rounded-2xl bg-white/10 border border-white/15 p-4"><strong>Filtro Pericial</strong><br><span class="text-white/65">Gratis</span></div>
-            <div class="rounded-2xl bg-white/10 border border-white/15 p-4"><strong>Estudio Inicial</strong><br><span class="text-white/65">50 €</span></div>
-            <div class="rounded-2xl bg-white/10 border border-white/15 p-4"><strong>Criterio Técnico</strong><br><span class="text-white/65">ASPEJURE 02659</span></div>
-          </div>
-        </div>
-        <div class="relative flex justify-center">
-          <div class="rounded-[2rem] bg-white p-4 shadow-soft max-w-md w-full">
-            <div class="rounded-[1.5rem] bg-cream overflow-hidden flex items-center justify-center">
-              <img src="/pexels-tima-miroshnichenko-6614757.webp" alt="Planos de arquitectura pericial" class="w-full h-auto object-contain" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-14 bg-white">
-      <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-3 gap-5">
-        <div class="rounded-3xl bg-soft p-6 shadow-card card"><p class="text-3xl font-black text-gold2">01</p><h2 class="mt-3 text-xl font-black">Detectar anomalías</h2><p class="mt-2 text-muted">Analizamos licencias, discrepancias catastrales, afectaciones del POUM y riesgos de fuera de ordenación.</p></div>
-        <div class="rounded-3xl bg-soft p-6 shadow-card card"><p class="text-3xl font-black text-gold2">02</p><h2 class="mt-3 text-xl font-black">Defender valor real</h2><p class="mt-2 text-muted">Desmontamos los errores técnicos de las valoraciones de la Administración que te hacen pagar de más.</p></div>
-        <div class="rounded-3xl bg-soft p-6 shadow-card card"><p class="text-3xl font-black text-gold2">03</p><h2 class="mt-3 text-xl font-black">Criterio de Mercado</h2><p class="mt-2 text-muted">Unimos el rigor pericial judicial con la visión comercial inmobiliaria de alto standing para inversores.</p></div>
-      </div>
-    </section>
-
-    <section class="w-full bg-soft">
-      <div class="max-w-7xl mx-auto px-5 py-10">
-          <img src="/masia.jpg.jpg" alt="Entorno de Masía y Finca Rústica Catalana" class="w-full h-auto rounded-[2.5rem] shadow-card object-cover aspect-[21/9]" />
-      </div>
-    </section>
-
-    <section class="py-20 bg-soft" id="casos">
-      <div class="max-w-7xl mx-auto px-5">
-        <div class="max-w-3xl">
-          <p class="badge text-gold2 text-xs font-black mb-4">Casos habituales</p>
-          <h2 class="text-3xl md:text-5xl font-black leading-tight">Una propiedad con dudas técnicas se negocia agresivamente a la baja.</h2>
-          <p class="mt-5 text-lg text-muted">Antes de publicar o firmar arras, es imprescindible saber qué defectos documentales o físicos detectará la otra parte o el banco.</p>
-        </div>
-        <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-          <div class="rounded-3xl bg-white p-6 shadow-card card"><h3 class="font-black text-lg">Fincas rústicas</h3><p class="mt-2 text-muted">Verificación de usos permitidos, accesos, linderos y limitations de edificación.</p></div>
-          <div class="rounded-3xl bg-white p-6 shadow-card card"><h3 class="font-black text-lg">Masías</h3><p class="mt-2 text-muted">Examen de reformas antiguas, anexos y viabilidad de licencias de actividad.</p></div>
-          <div class="rounded-3xl bg-white p-6 shadow-card card"><h3 class="font-black text-lg">Herencias</h3><p class="mt-2 text-muted">Subsanación de excesos de cabida, errores en el Registro y desactualización fiscal.</p></div>
-          <div class="rounded-3xl bg-white p-6 shadow-card card"><h3 class="font-black text-lg">Terrenos</h3><p class="mt-2 text-muted">Análisis de planeamiento sectorial, cesiones obligatorias y viabilidad de promoción.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-20 bg-cream" id="consulta">
-      <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-10 items-center">
-        <div>
-          <p class="badge text-gold2 text-xs font-black mb-4">Cómo funciona</p>
-          <h2 class="text-3xl md:text-5xl font-black leading-tight">Evaluamos la viabilidad inicial del activo sin coste.</h2>
-          <p class="mt-5 text-lg text-muted">No se trata de dar respuestas genéricas automáticas. Primero realizamos un filtro técnico para confirmar si puedo ayudarte. Si el caso requiere un dictamen o análisis normativo profundo, pasamos al estudio inicial.</p>
-        </div>
-        <div class="grid sm:grid-cols-2 gap-5">
-          <div class="rounded-3xl bg-white p-7 shadow-card card"><p class="text-sm text-muted">Paso 1</p><h3 class="mt-2 text-2xl font-black">Filtro técnico</h3><p class="mt-2 text-4xl font-black text-gold2">Gratis</p><p class="mt-4 text-muted">Estudiamos la viabilidad preliminar de tu caso y definimos la documentación técnica a preparar.</p></div>
-          <div class="rounded-3xl bg-blue p-7 text-white shadow-soft"><p class="text-sm text-white/60">Paso 2</p><h3 class="mt-2 text-2xl font-black">Estudio inicial</h3><p class="mt-2 text-4xl font-black text-white">50 €</p><p class="mt-4 text-white/70">Revisión pericial concreta de la finca. Importe 100% deducible si encargas un dictamen posterior.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-[.9fr_1.1fr] gap-12 items-center">
-        <div class="rounded-[2rem] bg-soft p-4 shadow-card card max-w-md mx-auto lg:mx-0 w-full">
-          <div class="rounded-[1.5rem] overflow-hidden flex items-center justify-center">
-            <img src="/ana-epitie-_1_.webp" alt="Ana Epitié · Consultora Urbanística" class="w-full h-auto object-cover aspect-[4/5]" />
-          </div>
-        </div>
-        <div>
-          <p class="badge text-gold2 text-xs font-black mb-4">Dirección técnica</p>
-          <h2 class="text-3xl md:text-5xl font-black leading-tight">Soy Ana Epitié.</h2>
-          <p class="mt-5 text-lg text-muted leading-relaxed">Asesora inmobiliaria y Perito Judicial Urbanístico adscrita a ASPEJURE (Nº 02659) en Cataluña. Mi valor diferencial consiste en fusionar la defensa pericial ante tribunales y administraciones con una visión comercial avanzada para blindar tus decisiones patrimoniales.</p>
-          <div class="mt-8 rounded-3xl bg-soft p-6 card">
-            <p class="font-black text-xl">No publico por publicar. Diseño soluciones con amparo legal.</p>
-            <p class="mt-2 text-muted">Esa es la diferencia entre colocar una propiedad en internet y estructurar una operación inmobiliaria con absoluto criterio técnico.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-20" id="formulario">
-      <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-[.85fr_1.15fr] gap-12 items-start">
-        <div>
-          <p class="badge text-gold2 text-xs font-black mb-4">Enviar caso confidencial</p>
-          <h2 class="text-3xl md:text-5xl font-black leading-tight">Cuéntame qué propiedad deseas revisar.</h2>
-          <p class="mt-5 text-lg text-muted">Este formulario inicia un canal de revisión preliminar seguro para valorar la viabilidad técnica de tu finca y determinar si requiere un estudio inicial de 50 €.</p>
-          <div class="mt-7 rounded-3xl bg-blue text-white p-6 shadow-card">
-            <h3 class="text-xl font-black">¿Prefieres comunicación rápida?</h3>
-            <p class="mt-2 text-white/70">Envíame la ubicación o referencia catastral y una descripción breve del problema por WhatsApp.</p>
-            <a href="https://wa.me/34632831009?text=Hola%20Ana%2C%20quiero%20enviarte%20mi%20caso%20urban%C3%ADstico." class="mt-5 inline-flex gold rounded-full px-6 py-3 text-white font-black">Enviar WhatsApp</a>
-          </div>
-        </div>
-
-        <form action="https://formspree.io/f/xjgzqkag" method="POST" class="rounded-[2rem] bg-white p-6 md:p-8 shadow-soft card">
-          <input type="text" name="_gotcha" style="display:none" />
-
-          <div class="grid md:grid-cols-2 gap-4">
-            <label><span class="text-sm font-bold">Nombre *</span><input required name="nombre" autocomplete="name" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3" placeholder="Tu nombre" /></label>
-            <label><span class="text-sm font-bold">Teléfono *</span><input required name="telefono" type="tel" autocomplete="tel" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3" placeholder="Tu teléfono" /></label>
-            <label><span class="text-sm font-bold">Email</span><input name="email" type="email" autocomplete="email" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3" placeholder="tu@email.com" /></label>
-            <label><span class="text-sm font-bold">Municipio *</span><input required name="municipio" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3" placeholder="Ej. Manresa" /></label>
-            <label><span class="text-sm font-bold">Tipo de propiedad *</span><select required name="tipo_propiedad" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3"><option value="">Selecciona</option><option>Finca rústica</option><option>Masía</option><option>Terreno / solar</option><option>Casa</option><option>Edificio</option><option>Local</option><option>Herencia</option><option>Otro</option></select></label>
-            <label><span class="text-sm font-bold">Qué necesitas *</span><select required name="necesidad" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3"><option value="">Selecciona</option><option>Vender</option><option>Comprar</option><option>Heredar / repartir</option><option>Legalizar o revisar obras</option><option>Reformar</option><option>Resolver una duda urbanística</option></select></label>
-          </div>
-          <label class="block mt-4"><span class="text-sm font-bold">Explícame el caso *</span><textarea required name="mensaje" rows="5" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3" placeholder="Ej. Dispongo de una finca rústica con construcciones que presentan discrepancias en los metros catastrales y necesito verificar su viabilidad legal..."></textarea></label>
-          
-          <label class="mt-4 flex gap-3 text-sm text-muted"><input required type="checkbox" name="consentimiento" class="mt-1" /><span>He leído y acepto la política de privacidad. Autorizo que Ana Epitié trate mis datos con absoluta confidencialidad para responder a mi consulta, conforme al RGPD UE 2016/679. Puedes ejercer tus derechos escribiendo a anaepitieinmobiliaria@gmail.com.</span></label>
-          
-          <button type="submit" class="mt-6 w-full gold rounded-full px-7 py-4 text-white font-black shadow-card">Enviar caso a revisión</button>
-          <p class="mt-4 text-xs text-muted text-center">Garantizamos estricta confidencialidad bajo secreto profesional. El examen concreto se realiza mediante consulta inicial.</p>
-        </form>
-      </div>
-    </section>
-
-    <section class="py-20 bg-blue text-white">
-      <div class="max-w-5xl mx-auto px-5 text-center">
-        <p class="badge text-white/70 text-xs font-black mb-4">Protección patrimonial</p>
-        <h2 class="text-3xl md:text-5xl font-black leading-tight">No expongas tu propiedad al mercado sin antes examinar su situación técnica.</h2>
-        <p class="mt-5 text-lg text-white/70">Una finca perfectamente examinada y defendida multiplica su seguridad jurídica y valor de cierre.</p>
-        <a href="#formulario" class="mt-8 inline-flex gold rounded-full px-8 py-4 text-white font-black shadow-soft">Enviar mi caso</a>
-      </div>
-    </section>
-  </main>
-
-  <section id="legal" class="py-16 soft-gradient border-t border-black/5">
-    <div class="max-w-7xl mx-auto px-5">
-      <div class="max-w-3xl mb-8">
-        <p class="badge text-gold2 text-xs font-black mb-4">Información legal</p>
-        <h2 class="text-3xl md:text-4xl font-black leading-tight">Aviso legal, privacidad y cookies</h2>
-        <p class="mt-4 text-muted">Cumplimiento RGPD obligatorio para tráfico de campañas en TikTok Ads.</p>
-      </div>
-      <div class="space-y-4">
-        <details class="rounded-3xl bg-white p-6 shadow-card card" open>
-          <summary class="font-black cursor-pointer text-lg">Aviso legal</summary>
-          <div class="mt-4 text-muted leading-relaxed space-y-3">
-            <p><strong>Titular del sitio web:</strong> Ana Epitié.</p>
-            <p><strong>Actividad:</strong> servicios de consultoría urbanística inicial, intermediación inmobiliaria y orientación profesional relacionada con inmuebles, fincas rústicas, masías, terrenos, herencias y propiedades con dudas urbanísticas.</p>
-            <p><strong>Contacto:</strong> anaepitieinmobiliaria@gmail.com · +34 632 831 009.</p>
-            <p><strong>Ámbito principal de actuación:</strong> Manresa, el Bages y Cataluña.</p>
-            <p>La información publicada en esta web tiene carácter informativo y comercial. No constituye informe técnico, dictamen pericial, asesoramiento jurídico ni garantía de resultado. Cada caso debe estudiarse individualmente con la documentación correspondiente y la normativa aplicable.</p>
-          </div>
-        </details>
-
-        <details class="rounded-3xl bg-white p-6 shadow-card card">
-          <summary class="font-black cursor-pointer text-lg">Política de privacidad</summary>
-          <div class="mt-4 text-muted leading-relaxed space-y-3">
-            <p><strong>Responsable del tratamiento:</strong> Ana Epitié.</p>
-            <p><strong>Datos tratados:</strong> nombre, teléfono, email, municipio, tipo de propiedad, necesidad indicada y mensaje enviado mediante el formulario o WhatsApp.</p>
-            <p><strong>Finalidad:</strong> responder a la consulta, valorar si el caso encaja con el consultorio urbanístico, preparar una posible consulta inicial, enviar información relacionada con el servicio solicitado y mantener la comunicación profesional necesaria.</p>
-            <p><strong>Base jurídica:</strong> consentimiento de la persona interesada al enviar el formulario o contactar voluntariamente, y aplicación de medidas precontractuales cuando se solicita información sobre un servicio.</p>
-            <p><strong>Conservación:</strong> los datos se conservarán durante el tiempo necesario para atender la consulta y, en su caso, mantener la relación profesional. Después podrán conservarse bloqueados durante los plazos legales exigibles.</p>
-            <p><strong>Destinatarios:</strong> no se venderán datos a terceros. Podrán utilizarse herramientas necesarias para gestionar formularios, correo electrónico, alojamiento web, analítica o comunicaciones, actuando como encargados del tratamiento cuando corresponda.</p>
-            <p><strong>Derechos (Acceso, Rectificación, Cancelación):</strong> puedes solicitar el acceso, la rectificación, supresión, oposición, limitación del tratamiento y portabilidad escribiendo directamente a <strong>anaepitieinmobiliaria@gmail.com</strong>. También puedes presentar una reclamación ante la Agencia Española de Protección de Datos.</p>
-            <p>Esta política se basa en el Reglamento General de Protección de Datos (RGPD UE 2016/679) y la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).</p>
-          </div>
-        </details>
-
-        <details class="rounded-3xl bg-white p-6 shadow-card card">
-          <summary class="font-black cursor-pointer text-lg">Política de cookies</summary>
-          <div class="mt-4 text-muted leading-relaxed space-y-3">
-            <p>Esta web puede utilizar cookies técnicas necesarias para su funcionamiento y, si se instalan herramientas de analítica, publicidad o medición (como el píxel de TikTok), también podrá utilizar cookies no necesarias sujetas al consentimiento de la persona usuaria.</p>
-            <p><strong>Cookies técnicas:</strong> permiten la navegación y el funcionamiento básico de la web.</p>
-            <p><strong>Cookies de analítica o publicidad:</strong> se activan si se incorpora una herramienta como TikTok Pixel o similar, y requieren informar claramente y obtener consentimiento cuando proceda.</p>
-          </div>
-        </details>
+<section class="py-20" id="formulario">
+  <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-[.85fr_1.15fr] gap-12 items-start">
+    <div>
+      <p class="badge text-gold2 text-xs font-black mb-4">Enviar caso confidencial</p>
+      <h2 class="text-3xl md:text-5xl font-black leading-tight">Cuéntame qué propiedad deseas revisar.</h2>
+      <p class="mt-5 text-lg text-muted">El filtro técnico inicial es <strong>gratuito</strong>. Si tu caso requiere revisión pericial concreta, el estudio inicial cuesta <strong>50 €</strong>, 100% deducibles si encargas un dictamen posterior.</p>
+      <div class="mt-7 rounded-3xl bg-blue text-white p-6 shadow-card">
+        <h3 class="text-xl font-black">¿Prefieres comunicación rápida?</h3>
+        <p class="mt-2 text-white/70">Envíame la ubicación o referencia catastral y una descripción breve del problema por WhatsApp.</p>
+        <a href="https://wa.me/34632831009?text=Hola%20Ana%2C%20quiero%20enviarte%20mi%20caso%20urban%C3%ADstico." class="mt-5 inline-flex gold rounded-full px-6 py-3 text-white font-black">Enviar WhatsApp</a>
       </div>
     </div>
-  </section>
+    <form id="caso-form" class="rounded-[2rem] bg-white p-6 md:p-8 shadow-soft card">
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+      <div class="grid md:grid-cols-2 gap-4">
+        <label><span class="text-sm font-bold">Nombre *</span><input required name="nombre" autocomplete="name" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3" placeholder="Tu nombre" /></label>
+        <label><span class="text-sm font-bold">Teléfono *</span><input required name="telefono" type="tel" autocomplete="tel" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3" placeholder="Tu teléfono" /></label>
+        <label><span class="text-sm font-bold">Email</span><input name="email" type="email" autocomplete="email" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3" placeholder="tu@email.com" /></label>
+        <label><span class="text-sm font-bold">Municipio *</span><input required name="municipio" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3" placeholder="Ej. Manresa" /></label>
+        <label><span class="text-sm font-bold">Tipo de propiedad *</span><select required name="tipo_propiedad" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3"><option value="">Selecciona</option><option>Finca rústica</option><option>Masía</option><option>Terreno / solar</option><option>Casa</option><option>Edificio</option><option>Local</option><option>Herencia</option><option>Otro</option></select></label>
+        <label><span class="text-sm font-bold">Qué necesitas *</span><select required name="necesidad" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3"><option value="">Selecciona</option><option>Vender</option><option>Comprar</option><option>Heredar / repartir</option><option>Legalizar o revisar obras</option><option>Reformar</option><option>Resolver una duda urbanística</option></select></label>
+      </div>
+      <label class="block mt-4"><span class="text-sm font-bold">Explícame el caso *</span><textarea required name="mensaje" rows="5" class="field mt-2 w-full rounded-2xl border border-black/10 px-4 py-3" placeholder="Ej. Dispongo de una finca rústica con construcciones que presentan discrepancias en los metros catastrales y necesito verificar su viabilidad legal..."></textarea></label>
+      <label class="mt-4 flex gap-3 text-sm text-muted"><input required type="checkbox" name="consentimiento" class="mt-1" /><span>He leído y acepto la política de privacidad. Autorizo que Ana Epitié trate mis datos con absoluta confidencialidad para responder a mi consulta, conforme al RGPD UE 2016/679. Puedes ejercer tus derechos escribiendo a anaepitieinmobiliaria@gmail.com.</span></label>
+      <button id="caso-submit" type="submit" class="mt-6 w-full gold rounded-full px-7 py-4 text-white font-black shadow-card">Enviar caso a revisión</button>
+      <div id="caso-ok" class="hidden mt-5 rounded-2xl bg-sageLight border border-sage/30 p-5 text-center">
+        <p class="font-black text-gold2 text-lg">✅ Caso recibido correctamente</p>
+        <p class="mt-1 text-sm text-muted">Te contactaré en menos de 24 horas laborables. Si es urgente, escríbeme directamente por WhatsApp.</p>
+      </div>
+      <div id="caso-error" class="hidden mt-5 rounded-2xl bg-red-50 border border-red-200 p-5 text-center">
+        <p class="font-black text-red-700">No se ha podido enviar el formulario</p>
+        <p class="mt-1 text-sm text-muted">Inténtalo de nuevo o <a class="underline font-bold" href="https://wa.me/34632831009?text=Hola%20Ana%2C%20el%20formulario%20de%20la%20web%20ha%20fallado%20y%20quiero%20enviarte%20mi%20caso.">escríbeme por WhatsApp</a>.</p>
+      </div>
+      <p class="mt-4 text-xs text-muted text-center">Garantizamos estricta confidencialidad bajo secreto profesional. El examen concreto se realiza mediante consulta inicial.</p>
+    </form>
+  </div>
+</section>
 
-  <footer class="py-10 bg-white border-t border-black/5">
-    <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-3 gap-6 text-sm text-muted">
-      <div><p class="text-ink font-black text-lg">Consultorio Urbanístico</p><p class="mt-2">Ana Epitié · Perito judicial urbanístico ASPEJURE 02659.</p></div>
-      <div><p class="text-ink font-black">Contacto</p><p class="mt-2">anaepitieinmobiliaria@gmail.com</p><p>+34 632 831 009</p></div>
-      <div><p class="text-ink font-black">Legal</p><p class="mt-2"><a href="#legal" class="underline">Aviso legal, privacidad y cookies</a></p></div>
+<section class="py-20 bg-blue text-white">
+  <div class="max-w-5xl mx-auto px-5 text-center">
+    <p class="badge text-white/70 text-xs font-black mb-4">Protección patrimonial</p>
+    <h2 class="text-3xl md:text-5xl font-black leading-tight">No expongas tu propiedad al mercado sin antes examinar su situación técnica.</h2>
+    <p class="mt-5 text-lg text-white/70">Una finca perfectamente examinada y defendida multiplica su seguridad jurídica y valor de cierre.</p>
+    <a href="#formulario" class="mt-8 inline-flex gold rounded-full px-8 py-4 text-white font-black shadow-soft">Enviar mi caso</a>
+  </div>
+</section>
+
+</main>
+
+<section id="legal" class="py-16 soft-gradient border-t border-black/5">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="max-w-3xl mb-8">
+      <p class="badge text-gold2 text-xs font-black mb-4">Información legal</p>
+      <h2 class="text-3xl md:text-4xl font-black leading-tight">Aviso legal, privacidad y cookies</h2>
+      <p class="mt-4 text-muted">Cumplimiento RGPD obligatorio para tráfico de campañas en TikTok Ads.</p>
     </div>
-  </footer>
+    <div class="space-y-4">
+      <details class="rounded-3xl bg-white p-6 shadow-card card" open>
+        <summary class="font-black cursor-pointer text-lg">Aviso legal</summary>
+        <div class="mt-4 text-muted leading-relaxed space-y-3">
+          <p><strong>Titular del sitio web:</strong> Ana Epitié.</p>
+          <p><strong>Actividad:</strong> servicios de consultoría urbanística inicial, intermediación inmobiliaria y orientación profesional relacionada con inmuebles, fincas rústicas, masías, terrenos, herencias y propiedades con dudas urbanísticas.</p>
+          <p><strong>Contacto:</strong> anaepitieinmobiliaria@gmail.com · +34 632 831 009.</p>
+          <p><strong>Ámbito principal de actuación:</strong> Manresa, el Bages y Cataluña.</p>
+          <p>La información publicada en esta web tiene carácter informativo y comercial. No constituye informe técnico, dictamen pericial, asesoramiento jurídico ni garantía de resultado. Cada caso debe estudiarse individualmente con la documentación correspondiente y la normativa aplicable.</p>
+        </div>
+      </details>
+      <details class="rounded-3xl bg-white p-6 shadow-card card">
+        <summary class="font-black cursor-pointer text-lg">Política de privacidad</summary>
+        <div class="mt-4 text-muted leading-relaxed space-y-3">
+          <p><strong>Responsable del tratamiento:</strong> Ana Epitié.</p>
+          <p><strong>Datos tratados:</strong> nombre, teléfono, email, municipio, tipo de propiedad, necesidad indicada y mensaje enviado mediante el formulario o WhatsApp.</p>
+          <p><strong>Finalidad:</strong> responder a la consulta, valorar si el caso encaja con el consultorio urbanístico, preparar una posible consulta inicial, enviar información relacionada con el servicio solicitado y mantener la comunicación profesional necesaria.</p>
+          <p><strong>Base jurídica:</strong> consentimiento de la persona interesada al enviar el formulario o contactar voluntariamente, y aplicación de medidas precontractuales cuando se solicita información sobre un servicio.</p>
+          <p><strong>Conservación:</strong> los datos se conservarán durante el tiempo necesario para atender la consulta y, en su caso, mantener la relación profesional. Después podrán conservarse bloqueados durante los plazos legales exigibles.</p>
+          <p><strong>Destinatarios:</strong> no se venderán datos a terceros. Podrán utilizarse herramientas necesarias para gestionar formularios, correo electrónico, alojamiento web, analítica o comunicaciones, actuando como encargados del tratamiento cuando corresponda. Los datos del formulario se procesan mediante un sistema de automatización propio alojado en servidores dentro de la UE.</p>
+          <p><strong>Derechos (Acceso, Rectificación, Cancelación):</strong> puedes solicitar el acceso, la rectificación, supresión, oposición, limitación del tratamiento y portabilidad escribiendo directamente a <strong>anaepitieinmobiliaria@gmail.com</strong>. También puedes presentar una reclamación ante la Agencia Española de Protección de Datos.</p>
+          <p>Esta política se basa en el Reglamento General de Protección de Datos (RGPD UE 2016/679) y la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).</p>
+        </div>
+      </details>
+      <details class="rounded-3xl bg-white p-6 shadow-card card">
+        <summary class="font-black cursor-pointer text-lg">Política de cookies</summary>
+        <div class="mt-4 text-muted leading-relaxed space-y-3">
+          <p>Esta web puede utilizar cookies técnicas necesarias para su funcionamiento y, si se instalan herramientas de analítica, publicidad o medición (como el píxel de TikTok), también podrá utilizar cookies no necesarias sujetas al consentimiento de la persona usuaria.</p>
+          <p><strong>Cookies técnicas:</strong> permiten la navegación y el funcionamiento básico de la web.</p>
+          <p><strong>Cookies de analítica o publicidad:</strong> se activan si se incorpora una herramienta como TikTok Pixel o similar, y requieren informar claramente y obtener consentimiento cuando proceda.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
 
-  <script>
-    function getCookieConsent() {
-      try { return JSON.parse(localStorage.getItem('cookieConsentAnaEpitie') || 'null'); }
-      catch (e) { return null; }
-    }
-    function saveCookieConsent(consent) {
-      localStorage.setItem('cookieConsentAnaEpitie', JSON.stringify({
-        technical: true,
-        analytics: !!consent.analytics,
-        marketing: !!consent.marketing,
-        date: new Date().toISOString()
-      }));
-      document.getElementById('cookie-banner').classList.add('hidden');
-      document.getElementById('cookie-settings').classList.add('hidden');
-      loadOptionalScripts();
-    }
-    function loadOptionalScripts() {
-      const consent = getCookieConsent();
-      if (!consent) return;
-      if (consent.analytics) {
-        // Enlazar Google Analytics aquí si es necesario
-      }
-      if (consent.marketing) {
-        // Enlazar TikTok Pixel aquí para medir los leads de las campañas
-      }
-    }
-    document.addEventListener('DOMContentLoaded', function () {
-      const banner = document.getElementById('cookie-banner');
-      const panel = document.getElementById('cookie-settings');
-      const saved = getCookieConsent();
-      if (!saved) banner.classList.remove('hidden');
-      else loadOptionalScripts();
+<footer class="py-10 bg-white border-t border-black/5">
+  <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-3 gap-6 text-sm text-muted">
+    <div><p class="text-ink font-black text-lg">Consultorio Urbanístico</p><p class="mt-2">Ana Epitié · Perito judicial urbanístico ASPEJURE 02659.</p></div>
+    <div><p class="text-ink font-black">Contacto</p><p class="mt-2">anaepitieinmobiliaria@gmail.com</p><p>+34 632 831 009</p></div>
+    <div><p class="text-ink font-black">Legal</p><p class="mt-2"><a href="#legal" class="underline">Aviso legal, privacidad y cookies</a></p></div>
+  </div>
+</footer>
 
-      document.getElementById('accept-cookies').addEventListener('click', function () {
-        saveCookieConsent({ analytics: true, marketing: true });
-      });
-      document.getElementById('reject-cookies').addEventListener('click', function () {
-        saveCookieConsent({ analytics: false, marketing: false });
-      });
-      document.getElementById('settings-cookies').addEventListener('click', function () {
-        panel.classList.remove('hidden');
-      });
-      document.getElementById('close-cookie-settings').addEventListener('click', function () {
-        panel.classList.add('hidden');
-      });
-      document.getElementById('save-cookie-settings').addEventListener('click', function () {
-        saveCookieConsent({
-          analytics: document.getElementById('analytics-cookies').checked,
-          marketing: document.getElementById('marketing-cookies').checked
-        });
-      });
+<script>
+/* ====== CONFIGURACIÓN ====== */
+var N8N_WEBHOOK = 'https://n8n.anaepitieinmobiliaria.es/webhook/finca-lead';
+var FORMSPREE_FALLBACK = 'https://formspree.io/f/xjgzqkag';
+var TIKTOK_PIXEL_ID = 'D8L19LJC77UAV4NU1K0G';
+
+/* ====== COOKIES / CONSENTIMIENTO ====== */
+function getCookieConsent() {
+  try { return JSON.parse(localStorage.getItem('cookieConsentAnaEpitie') || 'null'); }
+  catch (e) { return null; }
+}
+function saveCookieConsent(consent) {
+  localStorage.setItem('cookieConsentAnaEpitie', JSON.stringify({
+    technical: true,
+    analytics: !!consent.analytics,
+    marketing: !!consent.marketing,
+    date: new Date().toISOString()
+  }));
+  document.getElementById('cookie-banner').classList.add('hidden');
+  document.getElementById('cookie-settings').classList.add('hidden');
+  loadOptionalScripts();
+}
+function loadOptionalScripts() {
+  var consent = getCookieConsent();
+  if (!consent) return;
+  if (consent.marketing && TIKTOK_PIXEL_ID && !window.ttq) {
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject = t; var ttq = w[t] = w[t] || [];
+      ttq.methods = ["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+      ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } };
+      for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+      ttq.instance = function (t) { var e = ttq._i[t] || [], n; for (n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]); return e };
+      ttq.load = function (e, n) {
+        var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+        ttq._i = ttq._i || {}; ttq._i[e] = []; ttq._i[e]._u = i;
+        ttq._t = ttq._t || {}; ttq._t[e] = +new Date;
+        ttq._o = ttq._o || {}; ttq._o[e] = n || {};
+        var o = document.createElement("script"); o.type = "text/javascript"; o.async = !0; o.src = i + "?sdkid=" + e + "&lib=" + t;
+        var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(o, a)
+      };
+      ttq.load(TIKTOK_PIXEL_ID);
+      ttq.page();
+    }(window, document, 'ttq');
+  }
+}
+
+/* ====== FORMULARIO → N8N (con fallback a Formspree) ====== */
+function trackLead() {
+  var consent = getCookieConsent();
+  if (window.ttq && consent && consent.marketing) {
+    try { window.ttq.track('SubmitForm'); } catch (e) {}
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* --- Cookies --- */
+  var banner = document.getElementById('cookie-banner');
+  var panel = document.getElementById('cookie-settings');
+  var saved = getCookieConsent();
+  if (!saved) banner.classList.remove('hidden');
+  else loadOptionalScripts();
+
+  document.getElementById('accept-cookies').addEventListener('click', function () {
+    saveCookieConsent({ analytics: true, marketing: true });
+  });
+  document.getElementById('reject-cookies').addEventListener('click', function () {
+    saveCookieConsent({ analytics: false, marketing: false });
+  });
+  document.getElementById('settings-cookies').addEventListener('click', function () {
+    panel.classList.remove('hidden');
+  });
+  document.getElementById('close-cookie-settings').addEventListener('click', function () {
+    panel.classList.add('hidden');
+  });
+  document.getElementById('save-cookie-settings').addEventListener('click', function () {
+    saveCookieConsent({
+      analytics: document.getElementById('analytics-cookies').checked,
+      marketing: document.getElementById('marketing-cookies').checked
     });
-  </script>
+  });
+
+  /* --- Formulario --- */
+  var form = document.getElementById('caso-form');
+  if (!form) return;
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    /* honeypot anti-spam */
+    if (form.querySelector('input[name="_gotcha"]').value) return;
+
+    var datos = {
+      nombre: form.nombre.value.trim(),
+      telefono: form.telefono.value.trim(),
+      email: form.email.value.trim(),
+      municipio: form.municipio.value.trim(),
+      tipo_propiedad: form.tipo_propiedad.value,
+      necesidad: form.necesidad.value,
+      mensaje: form.mensaje.value.trim(),
+      origen: 'revisa-tu-finca.vercel.app',
+      fecha: new Date().toLocaleString('es-ES', { timeZone: 'Europe/Madrid' })
+    };
+
+    var boton = document.getElementById('caso-submit');
+    var okBox = document.getElementById('caso-ok');
+    var errBox = document.getElementById('caso-error');
+    okBox.classList.add('hidden');
+    errBox.classList.add('hidden');
+    boton.textContent = 'Enviando...';
+    boton.disabled = true;
+
+    var enviado = false;
+
+    /* 1º intento: n8n (VPS propio) */
+    try {
+      var res = await fetch(N8N_WEBHOOK, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(datos)
+      });
+      if (res.ok) enviado = true;
+    } catch (err) { /* sigue al fallback */ }
+
+    /* 2º intento (fallback): Formspree, por si n8n está caído */
+    if (!enviado) {
+      try {
+        var res2 = await fetch(FORMSPREE_FALLBACK, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(datos)
+        });
+        if (res2.ok) enviado = true;
+      } catch (err2) { /* nada */ }
+    }
+
+    if (enviado) {
+      trackLead();
+      boton.textContent = '✅ Caso enviado';
+      boton.classList.add('opacity-80');
+      okBox.classList.remove('hidden');
+      form.reset();
+      okBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else {
+      boton.textContent = 'Enviar caso a revisión';
+      boton.disabled = false;
+      errBox.classList.remove('hidden');
+    }
+  });
+});
+</script>
+
 </body>
 </html>

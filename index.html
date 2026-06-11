@@ -442,26 +442,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var enviado = false;
 
-    /* 1º intento: n8n (VPS propio) */
+    /* PRINCIPAL: Formspree (notificación por email garantizada) */
     try {
-      var res = await fetch(N8N_WEBHOOK, {
+      var res = await fetch(FORMSPREE_FALLBACK, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(datos)
+      });
+      if (res.ok) enviado = true;
+    } catch (err) { /* sigue al secundario */ }
+
+    /* SECUNDARIO (no bloquea): copia a n8n por si se usa en el futuro */
+    try {
+      fetch(N8N_WEBHOOK, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(datos)
       });
-      if (res.ok) enviado = true;
-    } catch (err) { /* sigue al fallback */ }
+    } catch (err2) { /* irrelevante */ }
 
-    /* 2º intento (fallback): Formspree, por si n8n está caído */
+    /* Respaldo: si Formspree falló, n8n cuenta como entrega */
     if (!enviado) {
       try {
-        var res2 = await fetch(FORMSPREE_FALLBACK, {
+        var res2 = await fetch(N8N_WEBHOOK, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(datos)
         });
         if (res2.ok) enviado = true;
-      } catch (err2) { /* nada */ }
+      } catch (err3) { /* nada */ }
     }
 
     if (enviado) {

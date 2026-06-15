@@ -8,7 +8,7 @@
 <meta property="og:title" content="Diagnóstico & Consultorio Urbanístico | Ana Epitié" />
 <meta property="og:description" content="Antes de firmar o vender, examina la situación legal y física de tu finca." />
 <meta property="og:image" content="https://revisa-tu-finca.vercel.app/og-image.jpg" />
-<link rel="canonical" href="https://revisa-tu-finca.vercel.app/" />
+<link rel="canonical" href="https://www.revisatufinca.com/" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = {
@@ -303,17 +303,14 @@ body { background:#F8FAF7; color:#24323A; }
           <p><strong>Finalidad:</strong> responder a la consulta, valorar si el caso encaja con el consultorio urbanístico, preparar una posible consulta inicial, enviar información relacionada con el servicio solicitado y mantener la comunicación profesional necesaria.</p>
           <p><strong>Base jurídica:</strong> consentimiento de la persona interesada al enviar el formulario o contactar voluntariamente, y aplicación de medidas precontractuales cuando se solicita información sobre un servicio.</p>
           <p><strong>Conservación:</strong> los datos se conservarán durante el tiempo necesario para atender la consulta y, en su caso, mantener la relación profesional. Después podrán conservarse bloqueados durante los plazos legales exigibles.</p>
-          <p><strong>Destinatarios:</strong> no se venderán datos a terceros. Podrán utilizarse herramientas necesarias para gestionar formularios, correo electrónico, alojamiento web, analítica o comunicaciones, actuando como encargados del tratamiento cuando corresponda. Los datos del formulario se procesan mediante un sistema de automatización propio alojado en servidores dentro de la UE.</p>
-          <p><strong>Derechos (Acceso, Rectificación, Cancelación):</strong> puedes solicitar el acceso, la rectificación, supresión, oposición, limitación del tratamiento y portabilidad escribiendo directamente a <strong>anaepitieinmobiliaria@gmail.com</strong>. También puedes presentar una reclamación ante la Agencia Española de Protección de Datos.</p>
-          <p>Esta política se basa en el Reglamento General de Protección de Datos (RGPD UE 2016/679) y la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).</p>
+          <p><strong>Destinatarios:</strong> no se venderán datos a terceros. Podrán utilizarse herramientas necesarias para gestionar formularios, correo electrónico, alojamiento web, analítica o comunicaciones, actuando como encargados del tratamiento cuando corresponda.</p>
+          <p><strong>Derechos:</strong> puedes solicitar el acceso, la rectificación, supresión, oposición, limitación del tratamiento y portabilidad escribiendo a <strong>anaepitieinmobiliaria@gmail.com</strong>.</p>
         </div>
       </details>
       <details class="rounded-3xl bg-white p-6 shadow-card card">
         <summary class="font-black cursor-pointer text-lg">Política de cookies</summary>
         <div class="mt-4 text-muted leading-relaxed space-y-3">
-          <p>Esta web puede utilizar cookies técnicas necesarias para su funcionamiento y, si se instalan herramientas de analítica, publicidad o medición (como el píxel de TikTok), también podrá utilizar cookies no necesarias sujetas al consentimiento de la persona usuaria.</p>
-          <p><strong>Cookies técnicas:</strong> permiten la navegación y el funcionamiento básico de la web.</p>
-          <p><strong>Cookies de analítica o publicidad:</strong> se activan si se incorpora una herramienta como TikTok Pixel o similar, y requieren informar claramente y obtener consentimiento cuando proceda.</p>
+          <p>Esta web puede utilizar cookies técnicas necesarias para su funcionamiento y, si se instalan herramientas de analítica o publicidad, también cookies no necesarias sujetas al consentimiento del usuario.</p>
         </div>
       </details>
     </div>
@@ -330,8 +327,8 @@ body { background:#F8FAF7; color:#24323A; }
 
 <script>
 /* ====== CONFIGURACIÓN ====== */
-var N8N_WEBHOOK = 'https://n8n.anaepitieinmobiliaria.es/webhook/finca-lead';
-var FORMSPREE_FALLBACK = 'https://formspree.io/f/xjgzqkag';
+var FORMSPREE_URL = 'https://formspree.io/f/xjgzqkag';
+var N8N_WEBHOOK   = 'https://n8n.anaepitieinmobiliaria.es/webhook/finca-lead';
 var TIKTOK_PIXEL_ID = 'D8L19LJC77UAV4NU1K0G';
 
 /* ====== COOKIES / CONSENTIMIENTO ====== */
@@ -374,7 +371,6 @@ function loadOptionalScripts() {
   }
 }
 
-/* ====== FORMULARIO → N8N (con fallback a Formspree) ====== */
 function trackLead() {
   var consent = getCookieConsent();
   if (window.ttq && consent && consent.marketing) {
@@ -386,8 +382,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* --- Cookies --- */
   var banner = document.getElementById('cookie-banner');
-  var panel = document.getElementById('cookie-settings');
-  var saved = getCookieConsent();
+  var panel  = document.getElementById('cookie-settings');
+  var saved  = getCookieConsent();
   if (!saved) banner.classList.remove('hidden');
   else loadOptionalScripts();
 
@@ -421,19 +417,19 @@ document.addEventListener('DOMContentLoaded', function () {
     if (form.querySelector('input[name="_gotcha"]').value) return;
 
     var datos = {
-      nombre: form.nombre.value.trim(),
-      telefono: form.telefono.value.trim(),
-      email: form.email.value.trim(),
-      municipio: form.municipio.value.trim(),
+      nombre:         form.nombre.value.trim(),
+      telefono:       form.telefono.value.trim(),
+      email:          form.email.value.trim(),
+      municipio:      form.municipio.value.trim(),
       tipo_propiedad: form.tipo_propiedad.value,
-      necesidad: form.necesidad.value,
-      mensaje: form.mensaje.value.trim(),
-      origen: 'revisa-tu-finca.vercel.app',
-      fecha: new Date().toLocaleString('es-ES', { timeZone: 'Europe/Madrid' })
+      necesidad:      form.necesidad.value,
+      mensaje:        form.mensaje.value.trim(),
+      origen:         window.location.hostname,
+      fecha:          new Date().toLocaleString('es-ES', { timeZone: 'Europe/Madrid' })
     };
 
-    var boton = document.getElementById('caso-submit');
-    var okBox = document.getElementById('caso-ok');
+    var boton  = document.getElementById('caso-submit');
+    var okBox  = document.getElementById('caso-ok');
     var errBox = document.getElementById('caso-error');
     okBox.classList.add('hidden');
     errBox.classList.add('hidden');
@@ -442,32 +438,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var enviado = false;
 
-    /* PRINCIPAL: Formspree (notificación por email garantizada) */
+    /* INTENTO 1: Formspree */
     try {
-      var res = await fetch(FORMSPREE_FALLBACK, {
-        method: 'POST',
+      var res = await fetch(FORMSPREE_URL, {
+        method:  'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(datos)
+        body:    JSON.stringify(datos)
       });
       if (res.ok) enviado = true;
-    } catch (err) { /* sigue al secundario */ }
+    } catch (err) { /* continúa */ }
 
-    /* SECUNDARIO (no bloquea): copia a n8n por si se usa en el futuro */
+    /* INTENTO 2: n8n (siempre se intenta en paralelo como copia de seguridad) */
     try {
       fetch(N8N_WEBHOOK, {
-        method: 'POST',
+        method:  'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(datos)
+        body:    JSON.stringify(datos)
       });
     } catch (err2) { /* irrelevante */ }
 
-    /* Respaldo: si Formspree falló, n8n cuenta como entrega */
+    /* Si Formspree falló, n8n cuenta como entrega principal */
     if (!enviado) {
       try {
         var res2 = await fetch(N8N_WEBHOOK, {
-          method: 'POST',
+          method:  'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(datos)
+          body:    JSON.stringify(datos)
         });
         if (res2.ok) enviado = true;
       } catch (err3) { /* nada */ }
